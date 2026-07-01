@@ -51,7 +51,7 @@ body {
 
 .cover {
     display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -59,18 +59,28 @@ body {
     height: 757px;
     color: whitesmoke;
     padding: 50px;
-    align-items: center;
     text-transform: uppercase;
 }
 
 .cover-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 375px;
     grid-row: 2;
-    height: 385px;
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 0.3em;
-    line-height: 8rem;
 }
+
+.cover-title .text-align-left {
+    margin-bottom: auto;
+}
+
+.cover-title .text-align-right {
+    margin-top: auto;
+}
+
 
 .cover-description {
     grid-row: 3;
