@@ -17,10 +17,14 @@
             <a class="link" href="#header">главная</a>
           </li>
           <li>
-            <a class="link text-decoration-underline" href="#lots-section">посмотреть лоты</a>
+            <a class="link text-decoration-underline" href="#lots-section"
+              >посмотреть лоты</a
+            >
           </li>
           <li>
-            <a class="link text-decoration-underline" href="#about-section">об аукционе</a>
+            <a class="link text-decoration-underline" href="#about-section"
+              >об аукционе</a
+            >
           </li>
         </ul>
       </nav>
@@ -31,15 +35,17 @@
           alt="логотип с текстом 'оно тебе надо'"
         />
       </a>
-      <div class="contacts">
-        <address class="header-address font-style-normal">
-          <a class="link text-decoration-underline" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="link text-decoration-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p class="text-decoration-none">
-            наб. Принсенграхт 263- 265, Амстердам
-          </p>
-        </address>
-      </div>
+      <address class="header-address font-style-normal">
+        <a class="link text-decoration-underline" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="link text-decoration-underline" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <p class="text-decoration-none">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
+      </address>
     </header>
     <main class="main-class light-background">
       <section class="section cover-section">
@@ -50,59 +56,84 @@
             <span class="text-align-right">надо</span>
           </h1>
           <div class="cover-description">
-            <p class="cover-description-text"
-              >Аукцион вещей, <span class="low-spacing">в которые никто не верил</span></p
-            >
-            <button type="button" class="cover-button no-spacing">Сделать Ставку</button>
+            <p class="cover-description-text">
+              Аукцион вещей,
+              <span class="low-spacing">в которые никто не верил</span>
+            </p>
+            <button type="button" class="cover-button">Сделать Ставку</button>
           </div>
         </div>
       </section>
       <section class="section lots-section" id="lots-section">
         <div class="lots">
           <h2 class="lots-title uppercase bold space-margin">Лоты</h2>
-          <div class="grid-lots">
-            <article class="lot frame1">
-              <h3 class="frame-title uppercase text-decoration-underline bold">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <div class="frame-description">
-                <p>
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
-                </p>
-              </div>
-            </article>
-            <article class="lot frame2">
-              <h3 class="frame-title uppercase text-decoration-underline bold">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <div class="frame-description">
-                <p>
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
-                </p>
-              </div>
-            </article>
-            <article class="lot frame3">
-              <h3 class="frame-title uppercase text-decoration-underline bold">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <div class="frame-description">
-                <p>
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
-                </p>
-              </div>
-            </article>
-          </div>
-          <a class="link text-decoration-underline space-margin watch-more-lots-text" href="#0">посмотреть больше</a>
+          <ul class="grid-lots">
+            <li class="lot-list">
+              <a href="#0" class="frame-link">
+                <article class="lot frame-film">
+                  <h3
+                    class="frame-title uppercase text-decoration-underline bold"
+                  >
+                    Фильм режиссёра, который бросил киношколу
+                  </h3>
+                  <div class="frame-description">
+                    <p>
+                      Не просто бросил, а ушёл с первой лекции. Какой была бы
+                      ваша ставка, если бы вы не знали, что режиссёр — Пол Томас
+                      Андерсон?
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="lot-list">
+              <a href="#0" class="frame-link">
+                <article class="lot frame-book">
+                  <h3
+                    class="frame-title uppercase text-decoration-underline bold"
+                  >
+                    Книга, где описан один скучный день из жизни рекламного
+                    агента
+                  </h3>
+                  <div class="frame-description">
+                    <p>
+                      Объёмом почти в тысячу страниц. Иногда без знаков
+                      препинания и с переходами на древнеанглийский. В ней
+                      одновременно рассказывается о 16 июня 1904 года и об
+                      истории литературы, начиная с античных времён. И это всё
+                      накладывается на эпическую поэму Гомера. Сколько бы вы
+                      поставили на «Улисса» Джеймса Джойса?
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="lot-list">
+              <a href="#0" class="frame-link">
+                <article class="lot frame-painting">
+                  <h3
+                    class="frame-title uppercase text-decoration-underline bold"
+                  >
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3>
+                  <div class="frame-description">
+                    <p>
+                      Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                      что-то похожее на инфузорию-туфельку. Никаких полей,
+                      лесов, котиков... Сколько бы вы на такое поставили, если
+                      бы не знали, что это — одна из революционных работ
+                      Кандинского?
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </li>
+          </ul>
+          <a
+            class="link text-decoration-underline space-margin watch-more-lots-text"
+            href="#0"
+            >посмотреть больше</a
+          >
         </div>
       </section>
       <section class="section about-section">
@@ -139,15 +170,17 @@
       </section>
     </main>
     <footer class="footer-section light-background">
-      <div class="contacts">
-        <address class="footer-address font-style-normal">
-          <a class="link text-decoration-underline" href="tel:+99995555555">+9 999 555 5555</a>
-          <a class="link text-decoration-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p class="text-decoration-none">
-            наб. Принсенграхт 263- 265, Амстердам
-          </p>
-        </address>
-      </div>
+      <address class="footer-address font-style-normal">
+        <a class="link text-decoration-underline" href="tel:+99995555555"
+          >+9 999 555 5555</a
+        >
+        <a class="link text-decoration-underline" href="mailto:info@sobaka.ge"
+          >info@sobaka.ge</a
+        >
+        <p class="text-decoration-none">
+          наб. Принсенграхт 263- 265, Амстердам
+        </p>
+      </address>
       <div class="footer-menu">
         <nav class="footer-nav-menu text-align-center">
           <ul class="footer-menu-list list-style-type-none">
@@ -155,10 +188,14 @@
               <a class="link" href="#header">главная</a>
             </li>
             <li>
-              <a class="link text-decoration-underline" href="#lots-section">посмотреть лоты</a>
+              <a class="link text-decoration-underline" href="#lots-section"
+                >посмотреть лоты</a
+              >
             </li>
             <li class="list-style-type-none">
-              <a class="link text-decoration-underline" href="#about-section">об аукционе</a>
+              <a class="link text-decoration-underline" href="#about-section"
+                >об аукционе</a
+              >
             </li>
           </ul>
         </nav>
