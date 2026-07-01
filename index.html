@@ -10,29 +10,31 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="header-menu">
         <ul class="header-menu-list">
-          <li class="list-style-type-none">главная</li>
-          <li class="text-decoration-underline">
-            <a href="#lots-section">посмотреть лоты</a>
+          <li class="list-style-type-none">
+            <a class="link" href="#header">главная</a>
           </li>
-          <li class="text-decoration-underline">
-            <a href="#about-section">об аукционе</a>
+          <li>
+            <a class="link text-decoration-underline" href="#lots-section">посмотреть лоты</a>
+          </li>
+          <li>
+            <a class="link text-decoration-underline" href="#about-section">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a href="">
+      <a href="#header">
         <img
           src="./images/logo-black.svg"
           class="header-logo-svg"
-          alt="logo with text 'do you need it'"
+          alt="логотип с текстом 'оно тебе надо'"
         />
       </a>
       <div class="contacts">
         <address class="header-address font-style-normal">
-          <p><a href="tel:+99995555555">+9 999 555 5555</a></p>
-          <p><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
+          <a class="link text-decoration-underline" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="link text-decoration-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p class="text-decoration-none">
             наб. Принсенграхт 263- 265, Амстердам
           </p>
@@ -49,8 +51,8 @@
           </div>
 
           <div class="cover-description">
-            <span class="cover-description-text"
-              >Аукцион вещей, в которые никто не верил</span
+            <p class="cover-description-text"
+              >Аукцион вещей, в которые никто не верил</p
             >
             <button type="button" class="cover-button">Сделать Ставку</button>
           </div>
@@ -61,9 +63,9 @@
           <h2 class="lots-title uppercase bold space-margin">Лоты</h2>
           <div class="grid-lots">
             <div class="lot frame1">
-              <p class="frame-title uppercase text-decoration-underline bold">
+              <h3 class="frame-title uppercase text-decoration-underline bold">
                 Фильм режиссёра, который бросил киношколу
-              </p>
+              </h3>
               <div class="frame-description">
                 <p>
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -73,9 +75,9 @@
               </div>
             </div>
             <div class="lot frame2">
-              <p class="frame-title uppercase text-decoration-underline bold">
+              <h3 class="frame-title uppercase text-decoration-underline bold">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </p>
+              </h3>
               <div class="frame-description">
                 <p>
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
@@ -88,9 +90,9 @@
               </div>
             </div>
             <div class="lot frame3">
-              <p class="frame-title uppercase text-decoration-underline bold">
+              <h3 class="frame-title uppercase text-decoration-underline bold">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </p>
+              </h3>
               <div class="frame-description">
                 <p>
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
@@ -101,10 +103,7 @@
               </div>
             </div>
           </div>
-          <span
-            class="space-margin text-decoration-underline watch-more-lots-text"
-            ><a href="">посмотреть больше</a></span
-          >
+          <a class="link text-decoration-underline space-margin watch-more-lots-text" href="#0">посмотреть больше</a>
         </div>
       </section>
       <section class="section about-section">
@@ -113,7 +112,7 @@
             <img
               src="./images/logo-white.svg"
               class="about-logo-svg"
-              alt="white logo with text 'do you need it'"
+              alt="логотип с текстом 'оно тебе надо'"
             />
           </div>
           <h2 class="about-title uppercase bold">Об аукционе</h2>
@@ -141,8 +140,8 @@
     <footer class="footer-section light-background">
       <div class="contacts">
         <address class="footer-address font-style-normal">
-          <p><a href="tel:+99995555555">+9 999 555 5555</a></p>
-          <p><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
+          <a class="link text-decoration-underline" href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="link text-decoration-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p class="text-decoration-none">
             наб. Принсенграхт 263- 265, Амстердам
           </p>
@@ -150,13 +149,15 @@
       </div>
       <div class="footer-menu">
         <nav class="footer-nav-menu text-align-center">
-          <ul class="footer-menu-list">
-            <li class="list-style-type-none">главная</li>
-            <li class="list-style-type-none text-decoration-underline">
-              <a href="#lots-section">посмотреть лоты</a>
+          <ul class="footer-menu-list list-style-type-none">
+            <li>
+              <a class="link" href="#header">главная</a>
             </li>
-            <li class="list-style-type-none text-decoration-underline">
-              <a href="#about-section">об аукционе</a>
+            <li>
+              <a class="link text-decoration-underline" href="#lots-section">посмотреть лоты</a>
+            </li>
+            <li class="list-style-type-none">
+              <a class="link text-decoration-underline" href="#about-section">об аукционе</a>
             </li>
           </ul>
         </nav>
@@ -166,16 +167,16 @@
           ><img
             class="link socials-svg"
             src="./images/yt.svg"
-            alt="youtube logo"
+            alt="youtube логотип"
         /></a>
         <a href="https://vk.com/" target="_blank"
-          ><img class="link socials-svg" src="./images/vk.svg" alt="vk logo"
+          ><img class="link socials-svg" src="./images/vk.svg" alt="vk логотип"
         /></a>
         <a href="https://pinterest.com/" target="_blank"
           ><img
             class="link socials-svg"
             src="./images/pinterest.svg"
-            alt="pinterest logo"
+            alt="pinterest логотип"
         /></a>
       </div>
     </footer>

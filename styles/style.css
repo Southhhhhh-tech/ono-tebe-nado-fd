@@ -1,5 +1,17 @@
 body {
-    background-color: lightgray;
+    background-color: #FAFAFA;
+}
+
+.light-background {
+    background-color: #FFFFFF;
+}
+
+.link:hover {
+    color: #9400d3;
+}
+
+.link:active {
+    color: #5e0087;
 }
 
 .header, .footer-section {
@@ -13,7 +25,7 @@ body {
 .header {
     display: grid;
     background-color: white;
-    height: 293px;
+    min-height: 293px;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 0 50px;
@@ -51,12 +63,12 @@ body {
 
 .cover {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 757px;
+    min-height: 757px;
     color: whitesmoke;
     padding: 50px;
     text-transform: uppercase;
@@ -89,7 +101,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 22px;
-    height: 51px;
+    min-height: 51px;
 }
 
 .cover-description-text {
@@ -99,7 +111,7 @@ body {
 .cover-button {
     all: unset;
     border: 1px solid white;
-    height: 100%;
+    align-self: stretch;
     width: 256px;
     text-align: center;
     letter-spacing: 0.1rem;
@@ -200,7 +212,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 180px;
+    min-height: 180px;
     padding: 0 50px;
 }
 
